@@ -40,11 +40,11 @@ public class Main {
 
 
         int Years = 0;
-        if(Years > 2 && Years < 6)
+        if(Years >= 2 && Years <= 6)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в детский сад");
         }
-        else if(Years > 7 && Years < 17)
+        else if(Years >= 7 && Years <= 17)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в школу");
         }
@@ -52,7 +52,7 @@ public class Main {
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в университет");
         }
-        else if(Years > 24)
+        else if(Years >= 24)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить на работу");
         }
