@@ -30,21 +30,21 @@ public class Main {
         int Speed = 0;
         if(Speed>=60)
         {
-            System.out.println("скорость превышена");
+            System.out.println("Если скорость +"Speed+", то придется заплатить штраф");
         }
         else
         {
-            System.out.println("превышения скорости нет");
+            System.out.println("Если скорость +"Speed+", то можно ездить спокойно");
         }
 
 
 
         int Years = 0;
-        if(Years > 2 && Years < 6)
+        if(Years >= 2 && Years <= 6)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в детский сад");
         }
-        else if(Years > 7 && Years < 17)
+        else if(Years >= 7 && Years <= 17)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в школу");
         }
@@ -52,7 +52,7 @@ public class Main {
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить в университет");
         }
-        else if(Years > 24)
+        else if(Years >= 24)
         {
             System.out.println("Если возраст человека равен " + Years + ", то ему нужно ходить на работу");
         }
@@ -78,15 +78,15 @@ public class Main {
 
         int passengers = 0;
 
-        if (passengers < 60)
+        if (passengers == 0)
         {
             System.out.println("Есть сидячее место");
         }
-        else if (passengers < 102)
+        else if (passengers < 60)
         {
             System.out.println("Есть стоячее место");
         }
-        else
+        else if (passengers < 102)
         {
             System.out.println("Вагон уже полностью забит");
         }
